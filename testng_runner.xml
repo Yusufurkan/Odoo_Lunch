@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders" verbose="1">
+
+    <test name="WebOrders Automated Tests">
+        <classes>
+            <class name="com.odoo.tests.smoke_tests.Website">
+            </class>
+        </classes>
+    </test>
+
+</suite>
