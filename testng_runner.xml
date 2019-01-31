@@ -3,7 +3,7 @@
 
     <test name="WebOrders Automated Tests">
         <classes>
-            <class name="com.odoo.tests.smoke_tests.Website">
+            <class name="com.odoo.tests.smokeTest.Website">
             </class>
         </classes>
     </test>

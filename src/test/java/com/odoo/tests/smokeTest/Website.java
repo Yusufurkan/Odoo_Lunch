@@ -1,4 +1,4 @@
-package com.odoo.tests.smoke_tests;
+package com.odoo.tests.smokeTest;
 
 import com.odoo.utilities.TestBase;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -20,6 +20,5 @@ public class Website extends TestBase {
         pages.lunchPage().closePopup();
        // fail();
         extentLogger.pass("Login Test Passed...");
-
     }
 }
