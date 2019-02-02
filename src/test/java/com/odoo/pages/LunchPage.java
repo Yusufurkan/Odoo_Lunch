@@ -19,4 +19,3 @@ public class LunchPage {
         try{error.click();}catch (NoSuchElementException e){
         }
     }
-}
