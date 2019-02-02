@@ -1,12 +1,16 @@
 package com.odoo.pages;
 
 import com.odoo.utilities.Config;
+import com.odoo.utilities.Pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.odoo.utilities.Driver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
+    Pages pages = new Pages();
     public LoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -33,5 +37,12 @@ public class LoginPage {
         password.sendKeys(Config.getProperty("password"));
         loginBttn.click();
 
+    }
+
+    public void goLunch() {
+        pages.login().signIn();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        wait.until(ExpectedConditions.elementToBeClickable(pages.main().lucnhButtn)).click();
+        pages.lunchPage().closePopup();
     }
 }
