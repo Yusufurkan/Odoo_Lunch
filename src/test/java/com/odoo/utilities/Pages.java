@@ -4,7 +4,7 @@ import com.odoo.pages.*;
 
 public class Pages {
     private LoginPage loginPage;
-    private MainPage mainPage;
+    private HomePage mainPage;
     private LunchPage lunchPage;
     private AlertsPage alertPage;
     private ControlAccountsPage controlAccountsPage;
@@ -87,9 +87,9 @@ public class Pages {
         return loginPage;
     }
 
-    public MainPage main() {
+    public HomePage main() {
         if (mainPage == null) {
-            mainPage = new MainPage();
+            mainPage = new HomePage();
         }
         return mainPage;
     }
