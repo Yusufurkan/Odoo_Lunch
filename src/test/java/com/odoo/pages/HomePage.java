@@ -12,4 +12,5 @@ public class HomePage {
 
     @FindBy(xpath = "(//a[@class='oe_menu_toggler'])[10]")
     public WebElement lunchButton;
+
 }
