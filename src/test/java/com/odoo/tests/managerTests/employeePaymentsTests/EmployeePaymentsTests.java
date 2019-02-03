@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class EmployeePaymentsTests extends TestBase {
 
     @Test (description = "Verify that manager can see transactions by payment")
-    public void EmployeeTransactionsDIsplayedTest() throws Exception {
+    public void EmployeeTransactionsDisplayedTest() throws Exception {
         extentLogger = report.createTest("Employee Payments Test.");
         extentLogger.info("Sign into 'Lunch' module");
         pages.login().goToMainPage();
