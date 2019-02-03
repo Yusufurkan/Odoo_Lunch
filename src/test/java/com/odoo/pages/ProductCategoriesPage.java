@@ -13,8 +13,7 @@ public class ProductCategoriesPage {
     @FindBy(xpath = "//span[contains(text(),'Product Categories')]")
     public WebElement productCategories;
 
-    @FindBy (xpath = "/html/body/div[1]/div[2]/div[1]/div[2]/div[1]/div/button[1]")
-            //"//button[contains(text(),'Create')]")
+    @FindBy (xpath = "//button[@accesskey='c']")
     public WebElement createButton;
 
     @FindBy (xpath = "//input[@class='o_field_char o_field_widget o_input o_required_modifier']")
