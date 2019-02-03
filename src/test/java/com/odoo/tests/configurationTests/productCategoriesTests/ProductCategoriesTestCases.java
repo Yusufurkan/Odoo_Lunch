@@ -24,6 +24,8 @@ public class ProductCategoriesTestCases extends TestBase {
         extentLogger.info("Product Categories is displayed");
         Assert.assertTrue(pages.productCategoriesPage().productCategories.isDisplayed());
 
+        BrowserUtils.wait(3);
+
         extentLogger.info("Click Create");
         pages.productCategoriesPage().createButton.click();
 

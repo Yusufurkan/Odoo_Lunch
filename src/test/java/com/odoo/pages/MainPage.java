@@ -11,7 +11,7 @@ public class MainPage {
     }
 
     @FindBy(xpath = "(//a[@class='oe_menu_toggler'])[10]")
-    public WebElement lucnhButtn;
+    public WebElement lucnhButton;
 
 
 
