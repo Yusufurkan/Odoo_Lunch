@@ -30,9 +30,15 @@ public class BrowserUtils {
     /**
      * Generates the String path to the screenshot taken.
      * Within the method, the screenshot is taken and is saved into FileUtils.
+<<<<<<< HEAD
      * The String return will have manageAlerts unique name destination of the screenshot itself.
      *
      * @param name Test name passed in as manageAlerts String
+=======
+     * The String return will have ProductCategoriesTestCases unique name destination of the screenshot itself.
+     *
+     * @param name Test name passed in as ProductCategoriesTestCases String
+>>>>>>> refs/remotes/origin/configuration
      * @return unique String representation of the file's location / path to file
      */
     public static String getScreenshot(String name) {
@@ -79,7 +85,11 @@ public class BrowserUtils {
     }
 
     /**
+<<<<<<< HEAD
      * return manageAlerts list of string from manageAlerts list of elements ignores any element with no
+=======
+     * return ProductCategoriesTestCases list of string from ProductCategoriesTestCases list of elements ignores any element with no
+>>>>>>> refs/remotes/origin/configuration
      * text
      *
      * @param list
@@ -211,7 +221,11 @@ public class BrowserUtils {
     }
 
     /**
+<<<<<<< HEAD
      * Selects manageAlerts random value from manageAlerts dropdown list and returns the selected Web Element
+=======
+     * Selects ProductCategoriesTestCases random value from ProductCategoriesTestCases dropdown list and returns the selected Web Element
+>>>>>>> refs/remotes/origin/configuration
      * @param select
      * @return
      */
@@ -250,7 +264,11 @@ public class BrowserUtils {
     }
 
     /**
+<<<<<<< HEAD
      * Changes the HTML attribute of manageAlerts Web Element to the given value using JavaScript
+=======
+     * Changes the HTML attribute of ProductCategoriesTestCases Web Element to the given value using JavaScript
+>>>>>>> refs/remotes/origin/configuration
      * @param element
      * @param attributeName
      * @param attributeValue
