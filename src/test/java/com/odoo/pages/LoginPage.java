@@ -41,8 +41,8 @@ public class LoginPage {
 
     public void goLunch() {
         pages.login().signIn();
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
-        wait.until(ExpectedConditions.elementToBeClickable(pages.main().lucnhButtn)).click();
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 15);
+        wait.until(ExpectedConditions.elementToBeClickable(pages.main().lucnhButton)).click();
         pages.lunchPage().closePopup();
     }
 }

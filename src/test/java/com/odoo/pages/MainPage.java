@@ -10,8 +10,8 @@ public class MainPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@data-menu-xmlid='lunch.menu_lunch']")
-    public WebElement lucnhButtn;
+    @FindBy(xpath = "(//a[@class='oe_menu_toggler'])[10]")
+    public WebElement lucnhButton;
 
 
 }
