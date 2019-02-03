@@ -11,7 +11,7 @@ public class ViewAllOrders extends TestBase {
     public void canSeeOrdersByVendor() throws Exception {
         extentLogger = report.createTest("Can See Order By Vendor Test");
         extentLogger.info("Sign In");
-        pages.login().goLunch();
+        pages.login().goToMainPage();
         extentLogger.info("Click Order By Vendor button");
         BrowserUtils.waitForClickablility(pages.ordersbyVendorPage().ordersByVendorBtn, 5);
         pages.lunchPage().goToFunctionality("Orders by Vendor");
@@ -24,7 +24,7 @@ public class ViewAllOrders extends TestBase {
     public void ordersByMonthIsDisplayed() throws Exception {
         extentLogger = report.createTest("Orders By Month Is Displayed Test");
         extentLogger.info("Sign In");
-        pages.login().goLunch();
+        pages.login().goToMainPage();
         extentLogger.info("Click Order By Vendor button");
         BrowserUtils.waitForClickablility(pages.ordersbyVendorPage().ordersByVendorBtn, 10);
         pages.lunchPage().goToFunctionality("Orders by Vendor");
@@ -39,7 +39,7 @@ public class ViewAllOrders extends TestBase {
 
 //    @Test
 //    public void addOrderKanbanView() throws Exception {
-//        pages.login().goLunch();
+//        pages.login().goToMainPage();
 //        BrowserUtils.waitForClickablility(pages.ordersbyVendorPage().ordersByVendorBtn, 5);
 //        pages.lunchPage().goToFunctionality("Orders by Vendor");
 //

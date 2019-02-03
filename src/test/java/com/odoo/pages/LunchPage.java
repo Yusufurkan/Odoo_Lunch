@@ -41,6 +41,4 @@ public class LunchPage {
         } catch (NoSuchElementException e) {
         }
     }
-
-
 }

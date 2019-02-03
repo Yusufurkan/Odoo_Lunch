@@ -16,7 +16,7 @@ public class SmokeTest extends TestBase {
         pages.login().signIn();
         WebDriverWait wait = new WebDriverWait(driver, 5);
         extentLogger.info("Click on 'Lunch'. ");
-        wait.until(ExpectedConditions.elementToBeClickable(pages.main().lucnhButtn)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(pages.main().lunchButton)).click();
         extentLogger.info("Close pop-up");
         pages.lunchPage().closePopup();
         // fail();
@@ -30,7 +30,7 @@ public class SmokeTest extends TestBase {
         extentLogger= report.createTest("Verify Functionality's Titles.");
 
         extentLogger.info("Login with valid credentials.");
-        pages.login().goLunch();
+        pages.login().goToMainPage();
 
         extentLogger.info("Go to functionality verify the title.  ");
 
