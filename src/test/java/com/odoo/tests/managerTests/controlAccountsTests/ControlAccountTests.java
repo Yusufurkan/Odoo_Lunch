@@ -21,14 +21,14 @@ public class ControlAccountTests extends TestBase {
 
         //Verify that 'Lunch' tab is visible  on the top navigation tab
         extentLogger.info("Verifying that 'Lunch' tab is visible");
-        assertTrue(pages.main().lucnhButtn.isDisplayed());
+        assertTrue(pages.main().lunchButton.isDisplayed());
 
         //Verify that 'Lunch' tab is clickable on the top navigation tab
         extentLogger.info("Verifying that 'Lunch' tab is clickable");
-        assertTrue(BrowserUtils.isClickable(pages.main().lucnhButtn));
+        assertTrue(BrowserUtils.isClickable(pages.main().lunchButton));
 
         extentLogger.info("Clicking on 'Lunch' tab");
-        pages.main().lucnhButtn.click();
+        pages.main().lunchButton.click();
         extentLogger.pass("Lunch tab visibility test passed.");
     }
 
@@ -37,7 +37,7 @@ public class ControlAccountTests extends TestBase {
         extentLogger= report.createTest("Verify 'Control Accounts' becomes available and clickable on the left navigation tab");
 
         extentLogger.info("Clicking on 'Lunch' tab");
-        pages.main().lucnhButtn.click();
+        pages.main().lunchButton.click();
         pages.lunchPage().closePopup();
         BrowserUtils.wait(3);
 
@@ -66,7 +66,7 @@ public class ControlAccountTests extends TestBase {
         extentLogger = report.createTest("Correct total amount displayed test");
 
         extentLogger.info("Clicking on 'Lunch'");
-        pages.main().lucnhButtn.click();
+        pages.main().lunchButton.click();
         pages.lunchPage().closePopup();
 
         extentLogger.info("Clicking on 'Control Accounts'");
