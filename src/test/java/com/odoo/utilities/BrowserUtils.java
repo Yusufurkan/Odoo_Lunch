@@ -30,9 +30,9 @@ public class BrowserUtils {
     /**
      * Generates the String path to the screenshot taken.
      * Within the method, the screenshot is taken and is saved into FileUtils.
-     * The String return will have a unique name destination of the screenshot itself.
+     * The String return will have ControlAccountTests unique name destination of the screenshot itself.
      *
-     * @param name Test name passed in as a String
+     * @param name Test name passed in as ControlAccountTests String
      * @return unique String representation of the file's location / path to file
      */
     public static String getScreenshot(String name) {
@@ -79,7 +79,7 @@ public class BrowserUtils {
     }
 
     /**
-     * return a list of string from a list of elements ignores any element with no
+     * return ControlAccountTests list of string from ControlAccountTests list of elements ignores any element with no
      * text
      *
      * @param list
@@ -211,7 +211,7 @@ public class BrowserUtils {
     }
 
     /**
-     * Selects a random value from a dropdown list and returns the selected Web Element
+     * Selects ControlAccountTests random value from ControlAccountTests dropdown list and returns the selected Web Element
      * @param select
      * @return
      */
@@ -250,7 +250,7 @@ public class BrowserUtils {
     }
 
     /**
-     * Changes the HTML attribute of a Web Element to the given value using JavaScript
+     * Changes the HTML attribute of ControlAccountTests Web Element to the given value using JavaScript
      * @param element
      * @param attributeName
      * @param attributeValue
@@ -274,6 +274,17 @@ public class BrowserUtils {
                 element.click();
             }
         }
+    }
+
+    public static boolean isClickable(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+
+        }catch(Exception e){
+            return false;
+        }
+        return true;
     }
 
 }
