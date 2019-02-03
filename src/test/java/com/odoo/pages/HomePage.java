@@ -10,8 +10,7 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//span[contains(text(),'Lunch')][1]")
+    @FindBy(xpath = "(//a[@class='oe_menu_toggler'])[10]")
     public WebElement lunchButton;
-
 
 }
