@@ -30,9 +30,15 @@ public class BrowserUtils {
     /**
      * Generates the String path to the screenshot taken.
      * Within the method, the screenshot is taken and is saved into FileUtils.
+<<<<<<< HEAD
+     * The String return will have ControlAccountTests unique name destination of the screenshot itself.
+     *
+     * @param name Test name passed in as ControlAccountTests String
+=======
      * The String return will have EmployeePaymentsTests unique name destination of the screenshot itself.
      *
      * @param name Test name passed in as EmployeePaymentsTests String
+>>>>>>> refs/remotes/origin/manager
      * @return unique String representation of the file's location / path to file
      */
     public static String getScreenshot(String name) {
@@ -79,7 +85,11 @@ public class BrowserUtils {
     }
 
     /**
+<<<<<<< HEAD
+     * return ControlAccountTests list of string from ControlAccountTests list of elements ignores any element with no
+=======
      * return EmployeePaymentsTests list of string from EmployeePaymentsTests list of elements ignores any element with no
+>>>>>>> refs/remotes/origin/manager
      * text
      *
      * @param list
@@ -211,7 +221,11 @@ public class BrowserUtils {
     }
 
     /**
+<<<<<<< HEAD
+     * Selects ControlAccountTests random value from ControlAccountTests dropdown list and returns the selected Web Element
+=======
      * Selects EmployeePaymentsTests random value from EmployeePaymentsTests dropdown list and returns the selected Web Element
+>>>>>>> refs/remotes/origin/manager
      * @param select
      * @return
      */
@@ -250,7 +264,11 @@ public class BrowserUtils {
     }
 
     /**
+<<<<<<< HEAD
+     * Changes the HTML attribute of ControlAccountTests Web Element to the given value using JavaScript
+=======
      * Changes the HTML attribute of EmployeePaymentsTests Web Element to the given value using JavaScript
+>>>>>>> refs/remotes/origin/manager
      * @param element
      * @param attributeName
      * @param attributeValue
@@ -274,6 +292,17 @@ public class BrowserUtils {
                 element.click();
             }
         }
+    }
+
+    public static boolean isClickable(WebElement element) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(element));
+
+        }catch(Exception e){
+            return false;
+        }
+        return true;
     }
 
 }
