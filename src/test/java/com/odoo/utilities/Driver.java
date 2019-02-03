@@ -73,4 +73,13 @@ public class Driver {
             driver = null;
         }
     }
+
+    public static void nap(int sec){
+        try {
+            Thread.sleep(sec);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
 }

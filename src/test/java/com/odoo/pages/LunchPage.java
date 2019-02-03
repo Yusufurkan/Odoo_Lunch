@@ -28,10 +28,10 @@ public class LunchPage {
         for (int i = 0; i < functions.size(); i++) {
             if (functions.get(i).getText().equalsIgnoreCase(functionality)) {
                 functions.get(i).click();
-            } else {
-                throw new Exception("Functionality does not exist.. Check spelling! ");
+                return;
             }
         }
+        throw new Exception("Functionality does not exist.. Check spelling! ");
     }
 
     public void closePopup() {

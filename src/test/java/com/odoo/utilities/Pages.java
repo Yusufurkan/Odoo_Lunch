@@ -1,6 +1,7 @@
 package com.odoo.utilities;
 
 import com.odoo.pages.*;
+import com.odoo.tests.configurationTests.alertsTests.CreateAlertPage;
 
 public class Pages {
     private LoginPage loginPage;
@@ -15,6 +16,15 @@ public class Pages {
     private ProductsPage productsPage;
     private TodaysOrdersPage todaysOrdersPage;
     private YourLunchAccountPage yourLunchAccountPage;
+
+    private CreateAlertPage createAlertPage;
+
+    public CreateAlertPage createAlertPage(){
+        if(createAlertPage==null){
+            createAlertPage = new CreateAlertPage();
+        }
+        return createAlertPage;
+    }
 
     public YourLunchAccountPage yourLunchAccountPage() {
         if (yourLunchAccountPage == null) {
@@ -100,5 +110,6 @@ public class Pages {
         }
         return lunchPage;
     }
+
 
 }
