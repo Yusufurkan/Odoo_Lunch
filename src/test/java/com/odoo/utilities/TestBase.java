@@ -57,9 +57,9 @@ public abstract class TestBase {
         report.setSystemInfo("Environment", "Staging");
         report.setSystemInfo("Browser", Config.getProperty("browser"));
         report.setSystemInfo("OS", System.getProperty("os.name"));
-        report.setSystemInfo("QA Test ", "Yusuf O.");
-        htmlReporter.config().setDocumentTitle("Prestashop Reports");
-        htmlReporter.config().setReportName("Prestashop Automated Test Reports");
+        report.setSystemInfo("QA Test ", "Heydar Abdullayev");
+        htmlReporter.config().setDocumentTitle("Lunch Function");
+        htmlReporter.config().setReportName("Lunch Functionality Report");
         htmlReporter.config().setTheme(Theme.DARK);
 
     }
