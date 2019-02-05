@@ -31,9 +31,9 @@ public class BrowserUtils {
      * Generates the String path to the screenshot taken.
      * Within the method, the screenshot is taken and is saved into FileUtils.
 <<<<<<< HEAD
-     * The String return will have ControlAccountTests unique name destination of the screenshot itself.
+     * The String return will have ManageAccountTransactionsTests unique name destination of the screenshot itself.
      *
-     * @param name Test name passed in as ControlAccountTests String
+     * @param name Test name passed in as ManageAccountTransactionsTests String
 =======
      * The String return will have EmployeePaymentsTests unique name destination of the screenshot itself.
      *
@@ -86,7 +86,7 @@ public class BrowserUtils {
 
     /**
 <<<<<<< HEAD
-     * return ControlAccountTests list of string from ControlAccountTests list of elements ignores any element with no
+     * return ManageAccountTransactionsTests list of string from ManageAccountTransactionsTests list of elements ignores any element with no
 =======
      * return EmployeePaymentsTests list of string from EmployeePaymentsTests list of elements ignores any element with no
 >>>>>>> refs/remotes/origin/manager
@@ -222,7 +222,7 @@ public class BrowserUtils {
 
     /**
 <<<<<<< HEAD
-     * Selects ControlAccountTests random value from ControlAccountTests dropdown list and returns the selected Web Element
+     * Selects ManageAccountTransactionsTests random value from ManageAccountTransactionsTests dropdown list and returns the selected Web Element
 =======
      * Selects EmployeePaymentsTests random value from EmployeePaymentsTests dropdown list and returns the selected Web Element
 >>>>>>> refs/remotes/origin/manager
@@ -265,7 +265,7 @@ public class BrowserUtils {
 
     /**
 <<<<<<< HEAD
-     * Changes the HTML attribute of ControlAccountTests Web Element to the given value using JavaScript
+     * Changes the HTML attribute of ManageAccountTransactionsTests Web Element to the given value using JavaScript
 =======
      * Changes the HTML attribute of EmployeePaymentsTests Web Element to the given value using JavaScript
 >>>>>>> refs/remotes/origin/manager

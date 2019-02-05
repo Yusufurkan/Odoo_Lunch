@@ -24,6 +24,12 @@ public class ControlAccountsPage {
     @FindBy(css = ".breadcrumb>li")
     public WebElement pageHeaderText;
 
+    @FindBy(css = ".o_group_name")
+    public List<WebElement> accountNames;
+
+    @FindBy(css = "tr.o_data_row>td.o_list_number")
+    public List<WebElement> employeeAccountAmounts;
+
     @FindBy(css = ".o_group_header>td.o_list_number")
     public List<WebElement> allAmounts;
 
@@ -45,8 +51,16 @@ public class ControlAccountsPage {
     @FindBy(css = "table>thead>tr>th:nth-child(6)")
     public WebElement amountHeader;
 
+    @FindBy(xpath = "//tr[@class='o_data_row']/td[3]")
+    public List<WebElement> transactionDates;
+
+    @FindBy(xpath = "//tr[@class='o_data_row']/td[5]")
+    public List<WebElement> transactionDescription;
+
+    @FindBy(xpath = "//tr[@class='o_data_row']/td[6]")
+    public  List<WebElement>  transactionAmounts;
+
     @FindBy(css = "[data-menu='103'] .oe_menu_text")
     public WebElement controlAccountsButton;
-
 
 }
