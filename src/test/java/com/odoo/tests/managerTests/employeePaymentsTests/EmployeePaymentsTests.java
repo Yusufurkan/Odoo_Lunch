@@ -16,5 +16,6 @@ public class EmployeePaymentsTests extends TestBase {
        extentLogger.info("Verify that employee payment transactions are displayed");
        Assert.assertTrue(pages.employeePaymentsPage().transactionAmount.size() > 0, "No payment transactions found");
        extentLogger.pass( pages.employeePaymentsPage().transactionAmount.size() + " employee transactions are displayed.");
+
     }
 }
