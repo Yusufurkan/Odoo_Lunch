@@ -112,5 +112,7 @@ public class ControlAccountsPage {
     @FindBy(css = ".o_apply_filter")
     public WebElement filterApplyBtn;
 
+    @FindBy(css = ".o_cp_switch_buttons>button:nth-child(2)")
+    public WebElement kanbanView;
 
 }

@@ -23,8 +23,6 @@ public class SearchTests extends TestBase {
         extentLogger.info("Clicking on 'Control Accounts'");
         BrowserUtils.waitForClickablility(pages.controlAccountsPage().controlAccountsButton, 10).click();
 
-        pages.controlAccountsPage().controlAccountsButton.click();
-
         extentLogger.info("Verifying default search term");
         BrowserUtils.isElementsTextAMatch(pages.controlAccountsPage().defaultSearchTerm, "By Employee", 10);
 
