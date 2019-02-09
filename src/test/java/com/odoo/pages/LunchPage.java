@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.odoo.utilities.Driver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.sql.SQLOutput;
 import java.util.List;
@@ -24,14 +26,19 @@ public class LunchPage {
     @FindBy(xpath = "//ol[@class='breadcrumb']/li")
     public WebElement title;
 
-    public void goToFunctionality(String functionality) throws Exception {
-        for (int i = 0; i < functions.size(); i++) {
-            if (functions.get(i).getText().equalsIgnoreCase(functionality)) {
-                functions.get(i).click();
-                return;
+
+    public void goToFunctionality(String functionality) {
+        try {
+            for (int i = 0; i < functions.size(); i++) {
+                if (functions.get(i).getText().equalsIgnoreCase(functionality)) {
+                    functions.get(i).click();
+                    return;
+                }
             }
+            throw new Exception();
+        } catch (Exception e) {
+            System.err.println("\nFunctionality does not exist.. Check spelling! ");
         }
-        throw new Exception("Functionality does not exist.. Check spelling! ");
     }
 
     public void closePopup() {

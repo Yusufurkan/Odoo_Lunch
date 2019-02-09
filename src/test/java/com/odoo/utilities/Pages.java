@@ -1,6 +1,7 @@
 package com.odoo.utilities;
 
 import com.odoo.pages.*;
+import com.odoo.tests.configurationTests.alertsTests.AlertDetailPage;
 import com.odoo.tests.configurationTests.alertsTests.CreateAlertPage;
 
 public class Pages {
@@ -16,11 +17,27 @@ public class Pages {
     private ProductsPage productsPage;
     private TodaysOrdersPage todaysOrdersPage;
     private YourLunchAccountPage yourLunchAccountPage;
+    private Constants constants;
 
     private CreateAlertPage createAlertPage;
+    private AlertDetailPage alertDetailPage;
 
-    public CreateAlertPage createAlertPage(){
-        if(createAlertPage==null){
+    public AlertDetailPage alertDetailPage() {
+        if (alertDetailPage == null) {
+            alertDetailPage = new AlertDetailPage();
+        }
+        return alertDetailPage;
+    }
+
+    public Constants constants() {
+        if (constants == null) {
+            constants = new Constants();
+        }
+        return constants;
+    }
+
+    public CreateAlertPage createAlertPage() {
+        if (createAlertPage == null) {
             createAlertPage = new CreateAlertPage();
         }
         return createAlertPage;

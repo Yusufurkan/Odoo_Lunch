@@ -1,5 +1,6 @@
 package com.odoo.tests.smokeTest;
 
+import com.odoo.utilities.BrowserUtils;
 import com.odoo.utilities.TestBase;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -21,8 +22,6 @@ public class SmokeTest extends TestBase {
         pages.lunchPage().closePopup();
         // fail();
         extentLogger.pass("Login Test Passed...");
-
-        pages.login().loginBttn.click();
     }
 
     @Test

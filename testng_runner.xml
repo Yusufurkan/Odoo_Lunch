@@ -1,11 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="WebOrders" verbose="1">
 
-    <test name="WebOrders Automated Tests">
-        <classes>
-            <class name="com.odoo.tests.smokeTest.SmokeTest">
-            </class>
-        </classes>
+    <test name="Alert page Test">
+
+        <packages>
+            <package name="com.odoo.tests.configurationTests.alertsTests"/>
+        </packages>
     </test>
 
 </suite>

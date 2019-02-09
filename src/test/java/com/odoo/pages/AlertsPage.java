@@ -16,7 +16,10 @@ public class AlertsPage {
     public WebElement alertBttn;
 
     @FindBy(xpath = "//tbody//input")
-    public List<WebElement> alerts;
+    public List<WebElement> alertsInput;
+
+    @FindBy(xpath = "(//tbody/tr)/td[2]")
+    public List<WebElement> alertsMessage;
 
     @FindBy(xpath = "(//button[@data-toggle='dropdown'])[2]")
     public WebElement action;
@@ -29,12 +32,23 @@ public class AlertsPage {
 
     @FindBy(css = "button[class='btn btn-sm btn-primary']")
     public WebElement confirmationPopupOk;
+
     public int getRndmAlert() {
-        return (int) (Math.random() * alerts.size());
+        return (int) (Math.random() * alertsInput.size());
     }
 
     public void selectAction(int action) {
         actions.get(action - 1).click();
     }
 
+    public void isAlertDisplayed() {
+        try {
+            if (alertsInput.size() == 0) {
+                throw new IndexOutOfBoundsException();
+            }
+        } catch (IndexOutOfBoundsException e) {
+            System.err.println("No Alert is available.");
+        }
+
+    }
 }

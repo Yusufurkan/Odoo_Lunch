@@ -32,9 +32,9 @@ public class BrowserUtils {
      * Within the method, the screenshot is taken and is saved into FileUtils.
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * The String return will have manageAlerts unique name destination of the screenshot itself.
+     * The String return will have ManageAlerts unique name destination of the screenshot itself.
      *
-     * @param name Test name passed in as manageAlerts String
+     * @param name Test name passed in as ManageAlerts String
 =======
      * The String return will have ProductCategoriesTestCases unique name destination of the screenshot itself.
      *
@@ -93,7 +93,7 @@ public class BrowserUtils {
     /**
 <<<<<<< HEAD
 <<<<<<< HEAD
-     * return manageAlerts list of string from manageAlerts list of elements ignores any element with no
+     * return ManageAlerts list of string from ManageAlerts list of elements ignores any element with no
 =======
      * return ProductCategoriesTestCases list of string from ProductCategoriesTestCases list of elements ignores any element with no
 >>>>>>> refs/remotes/origin/configuration
@@ -232,7 +232,7 @@ public class BrowserUtils {
 
     /**
 
-     * Selects manageAlerts random value from manageAlerts dropdown list and returns the selected Web Element
+     * Selects ManageAlerts random value from ManageAlerts dropdown list and returns the selected Web Element
 =======
      * Selects ProductCategoriesTestCases random value from ProductCategoriesTestCases dropdown list and returns the selected Web Element
      * @param select
