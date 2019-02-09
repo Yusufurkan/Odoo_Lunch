@@ -19,6 +19,9 @@ public class ControlAccountsPage {
     @FindBy(css = ".o_list_buttons>button:nth-child(2)")
     public WebElement importButton;
 
+    @FindBy(css = "label.btn-primary")
+    public WebElement loadFile;
+
     @FindBy(css = ".o_searchview_input")
     public WebElement searchBox;
 

@@ -46,6 +46,7 @@ public class KanbanViewTests extends TestBase {
         assertEquals(pages.controlAccountsCreatePage().amountField.getText(), pages.controlAccountsCreatePage().amountAfterCreate.getText());
         assertEquals(pages.controlAccountsCreatePage().descriptionField.getText(), pages.controlAccountsCreatePage().descriptionAfterCreate.getText());
 
+        extentLogger= report.createTest("Add a transaction in Kanban view test passed");
     }
 
     @Test(description = "Verify that manager can delete a transaction in Kanban view")
@@ -85,6 +86,8 @@ public class KanbanViewTests extends TestBase {
         int cashMoveIdAfter = Integer.valueOf(pages.controlAccountsKanbanViewPage().cashMoveId.getText().substring(cashMoveId.indexOf("#")+1));
 
         assertTrue(cashMoveIdAfter - cashMoveIdBefore == 1);
+
+        extentLogger= report.createTest("Delete a transaction in Kanban view test passed");
     }
 
     @Test(description = "Verify that manager can edit a transaction in Kanban view")
@@ -128,6 +131,8 @@ public class KanbanViewTests extends TestBase {
         int cashMoveIdAfter = Integer.valueOf(pages.controlAccountsKanbanViewPage().cashMoveId.getText().substring(cashMoveId.indexOf("#")+1));
 
         assertTrue(cashMoveIdAfter == cashMoveIdBefore);
+        extentLogger= report.createTest("Edit a transaction in Kanban view test passed");
+
     }
 
 }
