@@ -31,19 +31,13 @@ public class BrowserUtils {
      * Generates the String path to the screenshot taken.
      * Within the method, the screenshot is taken and is saved into FileUtils.
 <<<<<<< HEAD
-     * The String return will have ViewAllOrders unique name destination of the screenshot itself.
+     * The String return will have ManageAccountTransactionsTests unique name destination of the screenshot itself.
      *
-     * @param name Test name passed in as ViewAllOrders String
-=======
-<<<<<<< HEAD
-     * The String return will have ControlAccountTests unique name destination of the screenshot itself.
-     *
-     * @param name Test name passed in as ControlAccountTests String
+     * @param name Test name passed in as ManageAccountTransactionsTests String
 =======
      * The String return will have EmployeePaymentsTests unique name destination of the screenshot itself.
      *
      * @param name Test name passed in as EmployeePaymentsTests String
->>>>>>> refs/remotes/origin/manager
 >>>>>>> refs/remotes/origin/manager
      * @return unique String representation of the file's location / path to file
      */
@@ -92,13 +86,9 @@ public class BrowserUtils {
 
     /**
 <<<<<<< HEAD
-     * return ViewAllOrders list of string from ViewAllOrders list of elements ignores any element with no
-=======
-<<<<<<< HEAD
-     * return ControlAccountTests list of string from ControlAccountTests list of elements ignores any element with no
+     * return ManageAccountTransactionsTests list of string from ManageAccountTransactionsTests list of elements ignores any element with no
 =======
      * return EmployeePaymentsTests list of string from EmployeePaymentsTests list of elements ignores any element with no
->>>>>>> refs/remotes/origin/manager
 >>>>>>> refs/remotes/origin/manager
      * text
      *
@@ -249,13 +239,9 @@ public class BrowserUtils {
 
     /**
 <<<<<<< HEAD
-     * Selects ViewAllOrders random value from ViewAllOrders dropdown list and returns the selected Web Element
-=======
-<<<<<<< HEAD
-     * Selects ControlAccountTests random value from ControlAccountTests dropdown list and returns the selected Web Element
+     * Selects ManageAccountTransactionsTests random value from ManageAccountTransactionsTests dropdown list and returns the selected Web Element
 =======
      * Selects EmployeePaymentsTests random value from EmployeePaymentsTests dropdown list and returns the selected Web Element
->>>>>>> refs/remotes/origin/manager
 >>>>>>> refs/remotes/origin/manager
      * @param select
      * @return
@@ -296,13 +282,9 @@ public class BrowserUtils {
 
     /**
 <<<<<<< HEAD
-     * Changes the HTML attribute of ViewAllOrders Web Element to the given value using JavaScript
-=======
-<<<<<<< HEAD
-     * Changes the HTML attribute of ControlAccountTests Web Element to the given value using JavaScript
+     * Changes the HTML attribute of ManageAccountTransactionsTests Web Element to the given value using JavaScript
 =======
      * Changes the HTML attribute of EmployeePaymentsTests Web Element to the given value using JavaScript
->>>>>>> refs/remotes/origin/manager
 >>>>>>> refs/remotes/origin/manager
      * @param element
      * @param attributeName
@@ -338,6 +320,18 @@ public class BrowserUtils {
             return false;
         }
         return true;
+    }
+
+    /**
+     * Explicit Wait for the element's text verification, simplified
+     * @param element           WebElement requested to check for the text
+     * @param expected          String of the expected text requested
+     * @param seconds           int number of secods to wait
+     * @return                  boolean, that can be used within a conditional statement
+     */
+    public static boolean isElementsTextAMatch(WebElement element, String expected, int seconds) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
+        return wait.until(ExpectedConditions.textToBePresentInElement(element, expected));
     }
 
 }
