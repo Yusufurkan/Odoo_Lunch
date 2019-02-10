@@ -2,6 +2,7 @@ package com.odoo.tests.managerTests.employeePaymentsTests;
 
 import com.odoo.utilities.BrowserUtils;
 import com.odoo.utilities.TestBase;
+import com.sun.xml.internal.ws.db.glassfish.BridgeWrapper;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -148,6 +149,12 @@ public class EmployeePaymentsTests extends TestBase {
         BrowserUtils.waitForClickablility(pages.employeePaymentsPage().groupBy, 5).click();
         extentLogger.info("Click 'By User' option from drop down menu");
         BrowserUtils.waitForClickablility(pages.employeePaymentsPage().byUser, 5).click();
+
+//        Use wait to allow list to load
+//        BrowserUtils.wait(3);
+//        for (WebElement element : pages.employeePaymentsPage().transactionAmountGroupList) {
+//            System.out.println(element.getText());
+//        }
 
         extentLogger.info("Verify transactions group by user");
         assertTrue(!pages.employeePaymentsPage().userGroupList.isEmpty());
