@@ -329,10 +329,10 @@ public class BrowserUtils {
      * @param seconds           int number of secods to wait
      * @return                  boolean, that can be used within a conditional statement
      */
-    public static boolean isElementsTextAMatch(WebElement element, String expected, int seconds) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
-        return wait.until(ExpectedConditions.textToBePresentInElement(element, expected));
-    }
+//    public static boolean isElementsTextAMatch(WebElement element, String expected, int seconds) {
+//        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), seconds);
+//        return wait.until(ExpectedConditions.textToBePresentInElement(element, expected));
+//    }
 
 }
 
